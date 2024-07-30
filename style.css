@@ -11,18 +11,26 @@ body {
   margin: center;
 }
 input[type="button"] {
-  padding: 5px 30px;
+  padding: 8px 30px;
   font-weight: 600;
   letter-spacing: 1px;
   font-size: 16px;
   border: 1px solid grey;
-  border-radius: 3px;
+  border-radius: 6px;
   background-color: rgb(226, 219, 219);
   box-shadow: 5px 4px 10px black;
 }
 input[type="button"]:hover {
   cursor: pointer;
-  transform: scale(1.1);
+  animation: ani 0.5s ease-in-out;
+}
+@keyframes ani {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
 }
 select {
   font-weight: bold;
